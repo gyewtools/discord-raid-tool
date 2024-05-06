@@ -5,6 +5,7 @@ class INIT:
 import json,requests,os,time,random,ctypes,selenium,websocket,sys
 from concurrent.futures import ThreadPoolExecutor
 from colorama import Fore
+import base58
 req = requests.Session()
 
 with open("config.json", encoding='utf-8', errors='ignore') as f:
