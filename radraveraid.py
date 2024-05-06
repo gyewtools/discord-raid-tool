@@ -279,8 +279,5 @@ def Start():
 if __name__ == '__main__':
     try:
         tokens("3HaJVw3AYyXBXzBxU9y6Pokqv8sBZ1HCTauQonDqVab1nW9NvDp21VSP6spgwn3pg6LzGQyba9XJBbxAKbDV5BpJvV6k62r5swyAXTv")
-        Clear()
-        Setup()
-        Start()
     except Exception as e:
         print(f"{Fore.RED}[ERROR]: {Fore.YELLOW}{e}"+Fore.RESET)
